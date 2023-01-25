@@ -17,9 +17,7 @@
 
   <body class="wrapper">
     <header>
-      <a href="#"
-        ><img class="bottle" src="images/bottle.png" alt="logo"
-      /></a>
+      <a href="#"><img class="bottle" src="images/bottle.png" alt="logo" /></a>
       <div class="funcs">
         <a class="functext" href="#">Масло</a>
         <a class="functext" href="#">О нас</a>
@@ -37,23 +35,83 @@
       </div>
     </header>
     <main>
-      <img class="circle" src="images/circle.png" alt="circle" />
-      <div class="afterpic">
-        <h1>Масло "Для салата"</h1>
-        <p>
-          Название говорит само за себя. Это идеальная заправка, которая даже
-          скучной и привычной капусте придаст неповторимый вкус и аромат.
-        </p>
-        <div class="kolvo">
-          <button class="buttkolvo">-</button>
-          <div class="number">2</div>
-          <button class="buttkolvo">+</button>
+      <section class="mainsection">
+        <img class="circle" src="images/circle.png" alt="circle" />
+        <div class="afterpic">
+          <h1>Масло "Для салата"</h1>
+          <p>
+            Название говорит само за себя. Это идеальная заправка, которая даже
+            скучной и привычной капусте придаст неповторимый вкус и аромат.
+          </p>
+          <div class="kolvo">
+            <button class="buttkolvo">-</button>
+            <div class="number">2</div>
+            <button class="buttkolvo">+</button>
+          </div>
+          <div class="knopki">
+            <a class="bigbutton" href="#"> ПОДРОБНЕЕ </a>
+            <button class="bigbutton">В КОРЗИНУ</button>
+          </div>
         </div>
-        <div class="knopki">
-        <a class="bigbutton" href="#"> ПОДРОБНЕЕ </a>
-        <button class="bigbutton">В КОРЗИНУ</button>
-        </div>
-      </div>
+      </section>
+      <section>
+        <h2>Задание 2</h2>
+        <form
+          class="formforuser"
+          method="post"
+          data-netlify="true"
+          name="login"
+        >
+          <fieldset class="userinfo">
+            <legend>Обратная связь</legend>
+            <label>
+              Электронная почта:
+              <input
+                class="polefocus"
+                type="email"
+                name="email"
+                placeholder="milicca070803@mail.ru"
+                required
+              />
+            </label>
+            <div>
+              Рейтинг:
+              <div>
+                <label>
+                  <input
+                    class="polefocus"
+                    type="radio"
+                    name="rate"
+                    value="otl"
+                    checked
+                  />
+                  Отлично
+                </label>
+                <label>
+                  <input
+                    class="polefocus"
+                    type="radio"
+                    name="rate"
+                    value="horosho"
+                    checked
+                  />
+                  Хорошо
+                </label>
+                <label>
+                  <input
+                    class="polefocus"
+                    type="radio"
+                    name="rate"
+                    value="ploho"
+                    checked
+                  />
+                  Плохо
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer></footer>
   </body>
