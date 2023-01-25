@@ -50,6 +50,7 @@ main{
 }
 
 h1{
+    text-align: center;
     font-family: 'Amatic SC', cursive;
     font-weight: 400;
     font-size: 3.6rem;
@@ -122,4 +123,129 @@ p{
 footer{
     width: auto;
     height: 9rem;
+}
+
+.afterpic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.knopki{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottle{
+    width: 36.69px;
+    height: 80.21px;
+}
+
+.functext{
+    display: none;
+}
+
+.funcs{
+    display: none;
+}
+
+.bigbutton:hover{
+    transform: scale(110%);
+    transition: all 0.7s;
+}
+
+.bigbutton:active{
+    color: var(--primary-color);
+    transform: scale(95%);
+}
+
+.functext:hover{
+    transform: scale(110%);
+    transition: all 0.7s;
+}
+
+.functext:active{
+    color: var(--primary-color2);
+    transform: scale(95%);
+}
+
+.buttkolvo:hover{
+    transform: scale(110%);
+    transition: all 0.7s;
+}
+.buttkolvo:active{
+    color: var(--primary-color2);
+    transform: scale(95%);
+}
+
+@media all and (min-width:1400px){
+    .buttmenu{
+        display: none;
+    }
+
+    .funcs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .functext{
+        display: flex;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: var(--primary-color2);
+        text-decoration: none;
+        margin-left: 8rem;
+    }
+
+    header{
+        margin-bottom: 10rem;
+    }
+
+    .bottle{
+        width: 76px;
+        height: 155px;
+    }
+
+    main{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle{
+        width: 60rem;
+        height: 69rem;
+    }
+
+    h1{
+        text-align: left;
+        font-size: 6.4rem;
+        line-height: 1.1;
+    }
+    
+    p{
+        text-align: left;
+        margin:0;
+        margin-top: 3.2rem;
+        margin-bottom: 3.2rem;
+        max-width: 61.3rem;
+    }
+
+    .afterpic{
+        align-items: flex-start;
+        margin-left: 12.7rem;
+    }
+
+    .knopki{
+        flex-direction: row;
+    }
+
+    .bigbutton{
+        margin: 0;
+        margin-top: 3.2rem;
+        margin-right: 4rem;
+    }
 }
